@@ -22,7 +22,9 @@ Generate the config file and table migration
 
 This allows you to attach views count method to an AR model instance. By default, 
 it requires a column views_count to keep track of the view hits. You can specify column_name to whatever fits your situation.
+
     has_views_count
+    
     has_views_count column_name: 'views_count'
 
 ## Contributing
