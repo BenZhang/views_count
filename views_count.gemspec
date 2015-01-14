@@ -8,9 +8,9 @@ Gem::Specification.new do |spec|
   spec.version       = ViewsCount::VERSION
   spec.authors       = ["Ben Zhang"]
   spec.email         = ["bzbnhang@gmail.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
-  spec.homepage      = ""
+  spec.summary       = %q{ViewsCount is a lightweight plugin to keep track of views of an ActiveRecord model.}
+  spec.description   = %q{ViewsCount is a lightweight plugin to keep track of views of an ActiveRecord model.}
+  spec.homepage      = "https://github.com/BenZhang/views_count"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
