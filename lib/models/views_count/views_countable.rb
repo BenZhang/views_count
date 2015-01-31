@@ -33,7 +33,8 @@ module ViewsCount
             begin
               transaction do
                 view_item.save!
-                self.class.update_all("#{@@views_count_options[:column_name]} = COALESCE(#{@@views_count_options[:column_name]}, 0) + 1", {id: id})
+                self.increment!(@@views_count_options[:column_name])
+                # self.class.update_all("#{@@views_count_options[:column_name]} = COALESCE(#{@@views_count_options[:column_name]}, 0) + 1", {id: id})
                 self.reload
               end
             rescue ActiveRecord::RecordNotUnique
